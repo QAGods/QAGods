@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UI smoke tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="listeners.RetryTestListener"/>
+  </listeners>
+  <test thread-count="5" name="Smoke customers tests(failed)" verbose="0">
+    <groups>
+      <run>
+        <exclude name="broken"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.InitialTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="manShoesTest"/>
+        </methods>
+      </class> <!-- tests.InitialTest -->
+    </classes>
+  </test> <!-- Smoke customers tests(failed) -->
+</suite> <!-- Failed suite [UI smoke tests] -->

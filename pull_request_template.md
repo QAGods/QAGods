@@ -2,8 +2,7 @@
 
 Enter here PR description
 
-
-##General checklist
+## General checklist
 
 - [ ] No merge conflicts
 - [ ] No commented blocks of code
